@@ -23,7 +23,6 @@
               "src/assets",
               "src/bs4.1.1",
               "src/image",
-              "src/scss",
               "src/customSelect.js"
             ],
             "styles": [
