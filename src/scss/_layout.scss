@@ -220,7 +220,7 @@ input:checked+.slider:before {
 }
 
 .black-select select {
-    display: none;
+    display: block; //暫時只先打開，不然完全看不到
 }
 
 

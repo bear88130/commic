@@ -1,4 +1,4 @@
-
-<app-home></app-home>
-<app-read></app-read>
-
+<ng-container [ngSwitch]="nowPage">
+  <app-home *ngSwitchCase="1" (showChapterEvent)="showChapter($event)"></app-home>
+  <app-read *ngSwitchCase="2" (turnBackEvent)="turnBack()"></app-read>
+</ng-container>

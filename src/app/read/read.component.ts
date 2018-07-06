@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-read',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./read.component.css']
 })
 export class ReadComponent implements OnInit {
+  @Input()
+  @Output()
+  turnBackEvent = new EventEmitter();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    (<HTMLInputElement>document.getElementById('chapter')).value = '2';
+    (<HTMLInputElement>document.getElementById('page')).value = '1';
   }
 
+  turnBack() {
+    this.turnBackEvent.emit();
+  }
 }

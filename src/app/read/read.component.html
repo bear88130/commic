@@ -1,11 +1,11 @@
 <div class="container readPage">
     <div class="row read">
         <div class="col-lg-3 col-12 order-lg-1 order-2 read-title">
-            <a href="#" onclick="alert('My Hexschool');">My Hexschool</a>
+            <a href="#" (click)="turnBack()">My Hexschool</a>
         </div>
         <div class="col-lg-3 col-12 order-lg-2 order-3">
-            <div class="black-select" style="width:200px;">
-                <select>
+            <div class="black-select" style="width:200px;" >
+                <select id="chapter">
                     <option value="0">Select Chapter:</option>
                     <option value="1">Chapter 1</option>
                     <option value="2">Chapter 2</option>
@@ -14,7 +14,7 @@
         </div>
         <div class="col-lg-3 col-12 order-lg-3 order-4">
             <div class="black-select" style="width:200px;">
-                <select>
+                <select id="page">
                     <option value="0">Select Page:</option>
                     <option value="1">Page 1</option>
                     <option value="2">Page 2</option>
