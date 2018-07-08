@@ -351,15 +351,26 @@ input:checked+.slider:before {
             opacity: .3;
         }
         span {
+            display: block;
             font-size: 18px;
             font-weight: bolder;
         }
+        &::before {
+          position: relative;
+          top: 20px;
+          content: "";
+          width: 0px;
+          height: 0px;
+          border: 10px solid transparent;
+          border-color: transparent transparent transparent transparent;
+      }
     }
 }
 
 .thumb-selected,
 .thumb div:hover {
     span {
+        display: block;
         opacity: 0;
     }
     a {
@@ -370,12 +381,21 @@ input:checked+.slider:before {
     }
     &::before {
         position: relative;
-        bottom: 5px;
-        left: 10px;
+        top: 20px;
         content: "";
         width: 0px;
         height: 0px;
         border: 10px solid #000000;
         border-color: transparent transparent #000000 transparent;
     }
+}
+
+select{
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  outline:none;
+  -moz-box-shadow:1px 1px 3px 2px rgba(235, 235, 235, 0.5) inset;
+  -webkit-box-shadow:1px 1px 3px 2px rgba(235, 235, 235, 0.5) inset;
+  box-shadow:1px 1px 3px 2px rgba(235, 235, 235, 0.5) inset;
 }
