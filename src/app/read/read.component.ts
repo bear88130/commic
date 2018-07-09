@@ -101,4 +101,14 @@ export class ReadComponent implements OnInit {
       return false;
     }
   }
+
+  tuenBlack($event) {
+    const main = document.getElementById('main');
+    if ( $event.target.checked === false) {
+      main.className = ' ';
+    } else {
+      main.className = 'turnBlack';
+    }
+  }
+
 }

@@ -37,7 +37,7 @@
         <div class="col-8">
           <i class="far fa-lightbulb fa-2x"></i>
           <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" (click)="tuenBlack($event)">
             <span class="slider"></span>
           </label>
           <i class="far fa-moon fa-2x"></i>
@@ -70,29 +70,29 @@
       <div class="thumb">
         <div [class.thumb-selected]="TestSelected(1)">
           <span>1</span>
-          <a href="#" (click)="turnPick(1)">
+          <a href="javascript:" (click)="turnPick(1)">
             <img src="./image/storyboard-1.png" alt="1">
           </a>
         </div>
         <div [class.thumb-selected]="TestSelected(2)">
           <span>2</span>
-          <a href="#" (click)="turnPick(2)">
+          <a href="javascript:" (click)="turnPick(2)">
           <img src="./image/storyboard-2.png" alt="2">
           </a>
         </div>
         <div [class.thumb-selected]="TestSelected(3)">
           <span>3</span>
-          <a href="#" (click)="turnPick(3)"> <img src="./image/storyboard-3.png" alt="3">
+          <a href="javascript:" (click)="turnPick(3)"> <img src="./image/storyboard-3.png" alt="3">
           </a>
         </div>
         <div [class.thumb-selected]="TestSelected(4)">
           <span>4</span>
-          <a href="#" (click)="turnPick(4)"> <img src="./image/storyboard-4.png" alt="4">
+          <a href="javascript:" (click)="turnPick(4)"> <img src="./image/storyboard-4.png" alt="4">
           </a>
         </div>
         <div [class.thumb-selected]="TestSelected(5)">
           <span>5</span>
-          <a href="#" (click)="turnPick(5)"> <img src="./image/storyboard-5.png" alt="5">
+          <a href="javascript:" (click)="turnPick(5)"> <img src="./image/storyboard-5.png" alt="5">
           </a>
         </div>
         <div [class.thumb-selected]="TestSelected(6)">

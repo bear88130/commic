@@ -90,7 +90,7 @@ body {
         background-color: black;
         padding: 8px 8px;
         span {
-            font-family: white;
+            font-family: $en-fieldName-family;
             font-size: 24px;
             font-weight: bold;
             color: white;
@@ -299,6 +299,7 @@ input:checked+.slider:before {
 }
 
 .picture {
+  margin-top: 24px;
     img {
         width: 100%;
     }
@@ -398,4 +399,115 @@ select{
   -moz-box-shadow:1px 1px 3px 2px rgba(235, 235, 235, 0.5) inset;
   -webkit-box-shadow:1px 1px 3px 2px rgba(235, 235, 235, 0.5) inset;
   box-shadow:1px 1px 3px 2px rgba(235, 235, 235, 0.5) inset;
+}
+
+.turnBlack{
+  background-color: black;
+  .logo{
+    background-color: $normal-green;
+    span {
+      color: black;
+  }
+  }
+
+  .title {
+    background-color: $normal-green;
+    span {
+        color: black;
+    }
+}
+
+.introduction {
+  .cover {
+      border-left: 4px solid white;
+      border-right: 4px solid white;
+  }
+  .fieldName {
+      color: white;
+  }
+  .fieldContent {
+      color: white;
+  }
+}
+
+.chapters {
+  .title-block {
+      background-color: white;
+      span {
+          color: black;
+      }
+  }
+  .item-block {
+      border: 4px solid white;
+      .item {
+          color: white;
+          a {
+              color: white;
+              text-decoration: none;
+              &:hover {
+                  color: black;
+              }
+          }
+          &:hover {
+              background-color: white;
+              color: black;
+              a {
+                  color: black;
+              }
+          }
+      }
+  }
+}
+
+.read-title {
+  a {
+      color: $normal-green;
+      text-decoration: none;
+      &:hover {
+          color: $normal-green;
+      }
+  }
+}
+
+.next-block {
+  &:hover {
+      background-color: $normal-green;
+  }
+  .next {
+      color: $normal-green;
+      &:hover {
+          color: $normal-green;
+      }
+  }
+}
+
+.pre-block {
+  &:hover {
+      background-color: $normal-green;
+  }
+  .pre {
+      color: $normal-green;
+      &:hover {
+          color: $normal-green;
+      }
+  }
+}
+
+.thumb-selected,
+.thumb div:hover {
+  a {
+      img {
+          border: 4px solid $normal-green;
+      }
+  }
+  &::before {
+      border: 10px solid $normal-green;
+      border-color: transparent transparent $normal-green transparent;
+  }
+}
+
+i{
+  color:white;
+}
+
 }
